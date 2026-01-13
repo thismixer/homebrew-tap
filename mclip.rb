@@ -10,7 +10,7 @@ class Mclip < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/thismixer/MultiClip/releases/download/v1.0.5/mclip_darwin_amd64.tar.gz"
-      sha256 "be790c187e4c11f98f8dcf8b65a10a4743d94fc9ab2e8ff63ef855bcb67ac80a"
+      sha256 "02762e42cea15cd448b0510b9473dbe6c59540c1fa6b477734f832db175e806c"
 
       def install
         bin.install "mclip"
@@ -18,7 +18,7 @@ class Mclip < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/thismixer/MultiClip/releases/download/v1.0.5/mclip_darwin_arm64.tar.gz"
-      sha256 "a0a2df6396988c4a7157a8b322c87aeeeb574d991b5f2b0f804096224fa33e9f"
+      sha256 "e47ac17b18477fad7e6ac2ffe5cb9d5161b5edcb997708dcf5842b16171f0f00"
 
       def install
         bin.install "mclip"
@@ -29,14 +29,14 @@ class Mclip < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/thismixer/MultiClip/releases/download/v1.0.5/mclip_linux_amd64.tar.gz"
-      sha256 "e146ed4bf111c8b02c549d7f94490aac6527e57926e5c1814470f28494e10da0"
+      sha256 "c9f31f70d1d4c61ae3b0f28b779211ab34aa53f7e86547ae98770af1bc1f56a6"
       def install
         bin.install "mclip"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/thismixer/MultiClip/releases/download/v1.0.5/mclip_linux_arm64.tar.gz"
-      sha256 "72db38d3785cda36a19a3c5ff943d2a4c80541873e35d990517f5d6cd81d5360"
+      sha256 "a8969cf14a6ed0142f8058d5929857314b4234736b500222950956ad67234d86"
       def install
         bin.install "mclip"
       end
