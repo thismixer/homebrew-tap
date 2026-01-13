@@ -5,20 +5,20 @@
 class Mclip < Formula
   desc "Clipboard sync between Mac and Arch"
   homepage "https://github.com/thismixer/MultiClip"
-  version "1.0.3"
+  version "1.0.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/thismixer/MultiClip/releases/download/v1.0.3/mclip_darwin_amd64.tar.gz"
-      sha256 "b558989a0755f48f5e6501af4b12150d06fb15f5a94bf7973037c3a340dbb2b1"
+      url "https://github.com/thismixer/MultiClip/releases/download/v1.0.4/mclip_darwin_amd64.tar.gz"
+      sha256 "73cc170fc8b4c77f36d4cb3f42775de67191178d700aacf3ccaa7606f3db1811"
 
       def install
         bin.install "mclip"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/thismixer/MultiClip/releases/download/v1.0.3/mclip_darwin_arm64.tar.gz"
-      sha256 "9f4560378619ed3bd6aea425299c21c640b45fc8fe3c611f1a6ff33f4ffc027c"
+      url "https://github.com/thismixer/MultiClip/releases/download/v1.0.4/mclip_darwin_arm64.tar.gz"
+      sha256 "91d2de32345a0aca195454f84477f34d475c5863e6edd1cc3090d47aa4a1c88d"
 
       def install
         bin.install "mclip"
@@ -28,15 +28,15 @@ class Mclip < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/thismixer/MultiClip/releases/download/v1.0.3/mclip_linux_amd64.tar.gz"
-      sha256 "2fd79955fab9de356bda18cc4047bf0a4cab956ef14406d754fd0963aa58dd63"
+      url "https://github.com/thismixer/MultiClip/releases/download/v1.0.4/mclip_linux_amd64.tar.gz"
+      sha256 "bfd1758bd00825e15e93568c4d1fa974c778c01519e221af8e046e2a83affd0e"
       def install
         bin.install "mclip"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/thismixer/MultiClip/releases/download/v1.0.3/mclip_linux_arm64.tar.gz"
-      sha256 "782e8d528c58c27e255aaca5e41e2a25a64a7cb9dcfdaee7e37a31d5ce400346"
+      url "https://github.com/thismixer/MultiClip/releases/download/v1.0.4/mclip_linux_arm64.tar.gz"
+      sha256 "e791c2d4e7ea3109a9205e2b667c822b5849d82335cdc9cceca146f69628aa3f"
       def install
         bin.install "mclip"
       end
